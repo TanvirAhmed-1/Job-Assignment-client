@@ -6,11 +6,11 @@ const ShowData = ({ data }) => {
   const { title, amount, date, category } = data;
   return (
     <div>
-      <div className="card w-96 bg-base-100 shadow-sm">
+      <div className="card w-96 bg-base-100 shadow-sm border border-gray-400 gap-10 ">
         <div className="card-body">
           <div className="flex justify-between">
             <h2 className="text-3xl font-bold">{title}</h2>
-            <span className="text-xl">{amount}</span>
+            <span className="text-xl">Amount: {amount} TK</span>
           </div>
           <ul className="mt-6 flex flex-col gap-2 text-xs">
             <li>
@@ -48,9 +48,7 @@ const ShowData = ({ data }) => {
               <span>{category}</span>
             </li>
           </ul>
-          <div className="mt-6">
-            <button className="btn btn-primary btn-block">Subscribe</button>
-          </div>
+ 
         </div>
       </div>
     </div>
